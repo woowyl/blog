@@ -1,21 +1,40 @@
 ---
-title: Hello World
+title: 通过hexo搭建个人博客
 tags: hexo
 categories: front-end
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+## 新建一个hexo博客
 
-### Create a new post
+### 安装hexo
+
+```bash
+$ npm install -g hexo
+```
+
+### 初始化
+
+```bash
+$ cd yourblogfold
+$ hexo init
+
+```
+
+## 常用命令
+
+### 生成一个新文章
 
 ``` bash
-$ hexo new "My New Post"
+
+// [layout] 为布局，可选项为 `post`、`page`、`draft`，这将决定文章所在文件路径。
+// <title> 为文章标题
+
+$ hexo new [] "My New Post"
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
+### 启动服务器
 
 ``` bash
 $ hexo server
@@ -23,7 +42,7 @@ $ hexo server
 
 More info: [Server](https://hexo.io/docs/server.html)
 
-### Generate static files
+### 生成静态文件
 
 ``` bash
 $ hexo generate
@@ -31,10 +50,56 @@ $ hexo generate
 
 More info: [Generating](https://hexo.io/docs/generating.html)
 
-### Deploy to remote sites
+### 部署
 
 ``` bash
 $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+
+
+## 配合github page
+
+1. 在github新建一个仓库，仓库名必须为`<user-name>.github.io`。`user-name`是github的昵称。
+
+2. 修改 _config.yml 配置
+
+```bash
+    # Deployment
+    ## Docs: https://hexo.io/docs/deployment.html
+    deploy:
+        type: git
+        repo: <你的仓库地址> # https://github.com/<user-name>/<user-name>.github.io
+        branch: master
+```
+
+3. 部署代码
+
+``` bash
+$ hexo deploy
+```
+
+4. 查看效果
+
+## 更换主题
+
+```bash
+# 下载到themes文件夹下
+$ git clone https://github.com/KevinOfNeu/hexo-theme-yourtheme yourtheme
+
+# 修改 _config.yml 配置
+$ theme: yourtheme
+
+```
+## 绑定自己的域名
+
+1. 在域名
+
+2. 在`/source`下添加名为`CNAME`的文件，无后缀。将你自己的域名放入文件内
+
+```bash
+    www.<yoursite>.name
+```
+
+## 添加https
