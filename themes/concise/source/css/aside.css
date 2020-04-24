@@ -116,6 +116,12 @@
 .author-thread-wrap {
   margin-top: 20px;
 }
+.author-thread-wrap.blogroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
 .author-threads {
   font-size: 38px;
 }
@@ -134,6 +140,11 @@
 }
 .thread-item:hover {
   color: #333;
+}
+.thread-item.blogroll {
+  font-size: 14px;
+  margin: 0 5px;
+  display: block;
 }
 @media screen and (max-height: 588px) {
   .author-meta {

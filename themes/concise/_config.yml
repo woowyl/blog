@@ -26,6 +26,12 @@ links:
   - svg: ./source/svg/weibo.svg
     url: http://weibo.com/woowyl
 
+#blogroll:
+blogroll:
+  - name: '文杰的博客'
+    url: 'https://tony-piao.github.io/'
+  - name: '程凯的博客'
+    url: 'https://chengkai.wang/'
 # github comment 
 git_commit:
   enable: true

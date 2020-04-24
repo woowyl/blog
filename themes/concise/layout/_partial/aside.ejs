@@ -36,7 +36,21 @@
                 </div>
             </div>
             <% } %>
+
+           
         </div>
+        <% if( theme.blogroll ) { %>
+            <div class="author-thread-wrap blogroll">
+                <div class="author-threads clearfix">
+                    <% theme.blogroll.forEach(function(link, index) { %>
+                        <a class="thread-item blogroll" href="<%= link.url %>" target="_blank" rel="noopener">
+                            <%- link.name %>
+                        </a>
+                    <% }) %>
+                </div>
+            </div>
+            <% } %>
         <% } %>
     </div>
+    
 </aside>
