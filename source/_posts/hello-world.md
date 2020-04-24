@@ -1,6 +1,7 @@
 ---
 title: 通过hexo搭建个人博客
 tags: hexo
+date: 2016-09-21 10:00:05
 categories: front-end
 ---
 
@@ -19,7 +20,7 @@ $ cd yourblogfold
 $ hexo init
 
 ```
-
+<!-- more -->
 ## 常用命令
 
 ### 生成一个新文章
@@ -92,9 +93,12 @@ $ git clone https://github.com/KevinOfNeu/hexo-theme-yourtheme yourtheme
 $ theme: yourtheme
 
 ```
+
 ## 绑定自己的域名
 
-1. 在域名
+1. 修改GitHub Pages中的Custom domain选择
+
+  > Setting=>  GitHub Pages => Custom domain
 
 2. 在`/source`下添加名为`CNAME`的文件，无后缀。将你自己的域名放入文件内
 
@@ -102,4 +106,35 @@ $ theme: yourtheme
     www.<yoursite>.name
 ```
 
+3. 添加域名解析
+
+在你的域名管理后台（eg:万网），修改你的域名解析记录。  
+添加两个A记录，用得到的IP，一个主机记录为：“www”，一个为“@”，这样通过[yoursitename].com和www.[yoursitename].com都能访问到你的博客了。
+
+详见(github官方配置文档)[https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site]
+
 ## 添加https
+
+自 2018 年 5 月 1 日，Github 支持自定义域名的 HTTPS 请求了。
+
+配置也相当简单：
+
+1. 更新 DNS 配置里的 A 记录，将其指向以下4个 IP 地址中的至少一个。
+
+    - 185.199.108.153
+    - 185.199.109.153
+    - 185.199.110.153
+    - 185.199.111.153
+
+2. GiHub Pages仓库的设置里勾选 'Enforce HTTPS'。
+  
+  > Setting=>  GitHub Pages => Custom domain
+
+## 添加评论
+
+  可以使用gitalk插件，[传送门](https://github.com/gitalk/gitalk)。具体配置就不写在这里了。  
+  推荐已经集成好的主题，[concise](https://github.com/sanonz/hexo-theme-concise)
+
+## 最佳实践
+
+  - 路径名包括文章的文件名，最好不要用中文

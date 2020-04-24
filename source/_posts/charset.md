@@ -7,3 +7,9 @@ categories: language
 
 
 ## 编码
+
+## 词法分析找四个东西
+
+## Reference
+[](https://home.unicode.org/
+https://www.fileformat.info/info/unicode/)

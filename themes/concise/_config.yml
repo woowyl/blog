@@ -29,8 +29,8 @@ links:
 # github comment 
 git_commit:
   enable: true
-  client_id: 7fbe80427f54741e289f
-  client_secret: f34ed5fd92e54c9000bd37ba951948cb939deff5
+  client_id: 0da1f66fc44b769a7531
+  client_secret: 567ec8a984c0f8fdcfd505b556e0ef16d99eab19
   repo: woowyl.github.io
   owner: woowyl
   admin:
@@ -43,3 +43,8 @@ baidu:
 
 # Miscellaneous
 favicon: /images/favicon.ico
+
+# Archive page setting
+archive_generator:
+  per_page: 15
+  order_by: -date
