@@ -138,3 +138,4 @@ $ theme: yourtheme
 ## 最佳实践
 
   - 路径名包括文章的文件名，最好不要用中文
+  - 丰富文档样式，除了基础的markdown语法外，还可以使用hexo自己的[语法](https://hexo.io/zh-cn/docs/tag-plugins.html)
