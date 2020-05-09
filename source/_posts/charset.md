@@ -13,9 +13,9 @@ categories: language
 计算机有哪些编码方式呢？
 
 ## ASCII 码
-<!-- more -->
 
 我们知道，计算机内部，所有信息最终都是一个二进制值。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从00000000到11111111。
+<!-- more -->
 
 上个世纪60年代，美国制定了一套字符编码，对英语字符与二进制位之间的关系，做了统一规定。这被称为 ASCII 码，一直沿用至今。
 
@@ -64,7 +64,7 @@ UTF-8 的编码规则很简单，只有二条：
 
 ### Unicode 与 UTF-8 之间的转换
 
-{% iframe https://codepen.io/woowyl/embed/GamxJG?height=807&theme-id=dark&default-tab=html,result 100% 400 %}
+{% iframe https://codepen.io/woowyl/embed/oNjdNxz?height=807&theme-id=dark&default-tab=js,result 100% 400 %}
 
 ### BMP （Basic Multilingual Plane）
 
