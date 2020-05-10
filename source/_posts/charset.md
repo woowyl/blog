@@ -64,6 +64,8 @@ UTF-8 的编码规则很简单，只有二条：
 
 ### Unicode 与 UTF-8 之间的转换
 
+如代码无法运行请点击[这里](https://codepen.io/woowyl/pen/oNjdNxz)
+
 {% iframe https://codepen.io/woowyl/embed/oNjdNxz?height=807&theme-id=dark&default-tab=js,result 100% 400 %}
 
 ### BMP （Basic Multilingual Plane）
