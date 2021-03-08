@@ -18,3 +18,8 @@
       hexo clean && hexo deploy // hexo will push the static files automatically into the specific branch(gh-pages) of your repo!
       ```
 
+4. 博客的四个分类
+ - front-end  前端
+ - back-end  后端
+ - language  计算机通识
+
