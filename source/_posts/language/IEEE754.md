@@ -29,13 +29,15 @@ javaScript采用IEEE754标准的双精度64位二进制的形式(单精度采用
 
 ### IEEE754
 基于 IEEE 754 标准的双精度 64 位二进制格式的值（-($2^{63}$ -1) 到 $2^{63}$ -1）。它并没有为整数给出一种特定的类型。除了能够表示浮点数外，还有一些带符号的值：+Infinity，-Infinity 和 NaN (非数值，Not-a-Number)。
-![5e108fa71c8bb159294b8a7e2187518c.png](evernotecid://84FC037D-AE68-4F05-8F7D-A0E8EE6858BD/appyinxiangcom/4074438/ENResource/p596)
+![](safeInteger.png)
 
 
 ||S|Exp|	Fraction|
 |-|-|-|-|
 |长度|1|	11|	52位长|
 |位数|63|62至52|偏正值（实际的指数大小+1023）	51至0位编号（从右边开始为0）|
+
+
  $1.fraction^{exponent}$
 - 第0位记录符号位 
     - 1 负数
@@ -101,7 +103,7 @@ javaScript采用IEEE754标准的双精度64位二进制的形式(单精度采用
 
 ### 补码的方式
 
-![521ab6715750440309c4ac2b9b15ec1f.png](evernotecid://84FC037D-AE68-4F05-8F7D-A0E8EE6858BD/appyinxiangcom/4074438/ENResource/p597)
+![](jiema.png)
 
 
 负数补码表示的范围比原码稍宽，多一种数码组合。对于定点数，若为纯小数，表示范围为：
